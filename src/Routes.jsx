@@ -4,12 +4,15 @@ import { Home, About } from './containers';
 import KegList from './components/KegList';
 import NewKeg from './components/NewKeg';
 import Header from './components/Header';
+import { Link } from 'react-router-dom';
 
-const Routes = () => (
-      <Switch>
-        <Route exact path="/" component={KegList} />
-        <Route exact path="/new" component={NewKeg} />
-      </Switch>
-);
+function Routes() {
+  return (
+    <Switch>
+      <Route exact path="/" component={KegList} />
+      <Route exact path="/new" component={NewKeg} />
+    </Switch>
+  );
+}
 
 export default Routes;
