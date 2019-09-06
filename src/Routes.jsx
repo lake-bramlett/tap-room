@@ -6,10 +6,10 @@ import NewKeg from './components/NewKeg';
 import Header from './components/Header';
 
 const Routes = () => (
-  <Switch>
-    <Route exact path="/" component={KegList} />
-    <Route exact path="/new" component={NewKeg} />
-  </Switch>
+      <Switch>
+        <Route exact path="/" component={KegList} />
+        <Route exact path="/new" component={NewKeg} />
+      </Switch>
 );
 
 export default Routes;

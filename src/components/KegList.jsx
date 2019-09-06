@@ -14,7 +14,6 @@ var kegs = [
 function KegList() {
   return (
     <div>
-      <h2>Hello world</h2>
      {kegs.map((keg, index) =>
 
        <Keg name={keg.name}

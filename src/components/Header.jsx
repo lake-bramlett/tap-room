@@ -3,11 +3,8 @@ import { Link } from 'react-router-dom';
 
 function Header() {
   return (
-    <div>
+    <div className="header">
       <h1>Tap Room</h1>
-      <BrowserRouter>
-        <Link to="/new">New Keg</Link>
-      </BrowserRouter>
     </div>
   );
 }
