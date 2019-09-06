@@ -5,7 +5,9 @@ function Header() {
   return (
     <div>
       <h1>Tap Room</h1>
-      <Link to="/new">New Keg</Link>
+      <BrowserRouter>
+        <Link to="/new">New Keg</Link>
+      </BrowserRouter>
     </div>
   );
 }
