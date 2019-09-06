@@ -11,15 +11,19 @@
 
 .left {
     text-align: left;
-}   
+}
 
 .header {
   width: 100%;
   text-align: center;
 }
 
-.header h1 {
+.header h1, .keg {
   border: 3px solid #000;
   border-radius: 12px;
   padding: 2%;
+}
+
+.keg {
+  display: inline-block;
 }

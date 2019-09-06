@@ -9,6 +9,18 @@ var kegs = [
     abv: 5,
     price: 6,
   },
+  {
+    name: "IPA",
+    brand: "Pfriem",
+    abv: 7.5,
+    price: 6,
+  },
+  {
+    name: "Hef",
+    brand: "Occidental",
+    abv: 5,
+    price: 6,
+  },
 ];
 
 function KegList() {

@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 function Keg(props) {
   return (
-    <div>
+    <div className="keg">
       <h2>Name: {props.name}</h2>
       <h4>Brand: {props.brand}</h4>
       <h4>ABV: {props.abv}</h4>
