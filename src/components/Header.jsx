@@ -1,19 +1,13 @@
 import React from 'react';
-import PropTypes from "prop-types";
+import { Link } from 'react-router-dom';
 
 function Header() {
   return (
     <div>
       <h1>Tap Room</h1>
+      <Link to="/new">New Keg</Link>
     </div>
   );
 }
-
-Header.propTypes = {
-  name: PropTypes.string,
-  brand: PropTypes.string,
-  abv: PropTypes.string,
-  price: PropTypes.string,
-};
 
 export default Header;

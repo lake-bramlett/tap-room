@@ -4,16 +4,17 @@ import Keg from "./Keg";
 
 var kegs = [
   {
-    name: "Tim",
-    url: "https://www.m5hosting.com/wp-content/uploads/no-profile-img.gif",
-    body: "A functioning, production-ready application would contain an ever-changing list of tickets, cycling through each to dynamically render their unique information in the queue."
+    name: "Pils",
+    brand: "Breakside",
+    abv: 5,
+    price: 6,
   },
 ];
 
 function KegList() {
   return (
     <div>
-    <h3>What's happening?</h3>
+      <h2>Hello world</h2>
      {kegs.map((keg, index) =>
 
        <Keg name={keg.name}
