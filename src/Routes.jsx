@@ -6,6 +6,7 @@ import { KegList } from './components/KegList';
 const Routes = () => (
   <Switch>
     <Route exact path="/" component={KegList} />
+    <Route exact path="/new" component={NewKeg} />
   </Switch>
 );
 
