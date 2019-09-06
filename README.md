@@ -56,30 +56,17 @@ and now you have the latest stable version of node&npm.
 `yarn test`/`npm test` run the tests with Jest and Enzyme, by default the test included only check for the correct render of base components & routes, all are passing.
 
 
-## Project structure
+## Component structure
 
 The boilerplate structure and files are the same as this repo minus the *bin* folder, everything else is exactly the same.
 
 ```
-*root*
-|
-├── */src/*
-│   ├── */assets/* where images and stuff are stored
-│   ├── */containers/* react-router jsx pages
-│   ├── *App.jsx* main layout
-│   ├── *Routes.jsx* front-end routes
-│   ├── *index.html* entry point
-│   ├── *index.jsx* javascript entry point
-│   ├── *style.scss* styling
-│   └── */tests/* contains test environment (Jest + Enzyme)
-│       ├── */__mock__/* contains setup to provide a valid path for imports
-│       ├── */_tests__/* the actual tests
-│       └── *setup.js* setup for enzyme for react 16
-├── *package.json* the whole package.json with every dependency and script, nothing is kept hidden
-├── *.eslintrc* eslint config
-├── *.babelrc* babel config (polyfills)
-├── *webpack.config.js* webpack config, it has a dev and prod environment
-└── *README.md* this file
+*app*
+├── *tap list*
+│   └── *keg*
+├── *new keg form*
+├── *nav
+└── *error 404*
 ```
 
 
@@ -97,4 +84,3 @@ This project uses AirBnB Javascript specs so you can write error-free react and 
 ## How to contribute
 
 I wrote a [small guide](https://medium.com/@francesco.agnoletto/how-to-not-f-up-your-local-files-with-git-part-1-e0756c88fd3c) on how to contribute and the common etiquette to follow.
-
