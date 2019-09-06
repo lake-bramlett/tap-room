@@ -5,6 +5,7 @@ function Header() {
   return (
     <div className="header">
       <h1>Tap Room</h1>
+      <Link to="/">Home</Link>
     </div>
   );
 }
