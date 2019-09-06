@@ -6,12 +6,14 @@ import KegList from './components/KegList';
 import reactLogo from './assets/React-icon.png';
 
 const App = () => (
+  <BrowserRouter>
   <Switch>
       <div>
         <Header />
         <Route exact path="/" component={KegList} />
       </div>
     </Switch>
+    </BrowserRouter>
 );
 
 export default App;
