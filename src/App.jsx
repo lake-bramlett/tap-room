@@ -8,7 +8,7 @@ import reactLogo from './assets/React-icon.png';
 const App = () => (
   <BrowserRouter>
     <div>
-      <h1>Hello world</h1>
+      <Routes />
     </div>
   </BrowserRouter>
 );
