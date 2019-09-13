@@ -13,6 +13,19 @@
   margin-bottom: 0px;
 }
 
+.name h4 {
+  margin: 0px;
+  font-style: italic;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.divider {
+  border-bottom: 1px solid #8c734b;
+  margin: 1px 6.5rem;
+}
+
+
 .brand h4 {
   font-weight: 200;
   text-transform: lowercase;
@@ -20,6 +33,7 @@
 }
 
 .keg button {
+  margin-top: 10px;
   background-color: #8c734b;
   border-radius: 0px 0px 5px 5px;
   text-transform: uppercase;
@@ -31,6 +45,16 @@
   display: block;
 }
 
-.keg .button:hover {
+.keg div.sub-info span.price {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.keg div.sub-info span {
+  margin: 0px 5px;
+}
+
+.keg button:hover {
   color: #000000;
 }

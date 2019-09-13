@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import {Link,Redirect} from 'react-router-dom'
 
 let _name = null;
+let _style = null;
 let _brand = null;
 let _abv = null;
 let _price = null;
@@ -18,6 +19,7 @@ export default class NewHomeForm extends Component {
   handleNewKegFormSubmission = (e) => {
     e.preventDefault()
     this.props.callback({name: _name.value,
+                         stlye: _style.value,
                          brand: _brand.value,
                          abv: _abv.value,
                          price: _price.value,
@@ -42,6 +44,11 @@ export default class NewHomeForm extends Component {
               id='name'
               placeholder='name'
               ref={(input) => {_name= input;}}/>
+              <input
+              type='text'
+              id='style'
+              placeholder='style'
+              ref={(input) => {_style= input;}}/>
               <input
               type='text'
               id='brand'
