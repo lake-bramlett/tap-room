@@ -33,13 +33,25 @@ export default class NewKegForm extends Component {
       <div className="new-keg">
         <form onSubmit={this.handleNewHomeFormSubmission}>
           <label>Name</label>
-          <input type='text' className ='name'/>
+          <input type='text'
+            id='name'
+            placeholder='name'
+            ref={(input) => {_name= input;}}/>
           <label>Brand</label>
-          <input type='text' className ='brand'/>
+          <input type='text'
+            id='brand'
+            placeholder='brand'
+            ref={(input) => {_brand= input;}}/>
           <label>ABV</label>
-          <input type='number' className ='abv'/>
+          <input type='number'
+            id='abv'
+            placeholder='abv'
+            ref={(input) => {_abv= input;}}/>
           <label>Price</label>
-          <input type='number' className ='price'/>
+          <input type='number'
+            id='price'
+            placeholder='price'
+            ref={(input) => {_price= input;}}/>
           <button className="add-button" type='submit'>Add a keg</button>
         </form>
       </div>
