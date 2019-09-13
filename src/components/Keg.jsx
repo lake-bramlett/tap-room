@@ -6,13 +6,14 @@ export default class Keg extends Component {
   }
 
   render(){
-    const { name, brand, abv, price } = this.props.keg;
+    const { name, brand, abv, price, pints } = this.props.keg;
     return (
         <div className="keg">
         Name: {name}
         Brand: {brand}
         Abv: {abv}
         Price: {price}
+        Pints: {pints}
         </div>
     )
   }

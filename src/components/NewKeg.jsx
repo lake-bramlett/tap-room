@@ -20,7 +20,8 @@ export default class NewHomeForm extends Component {
     this.props.callback({name: _name.value,
                          brand: _brand.value,
                          abv: _abv.value,
-                         price: _price.value})
+                         price: _price.value,
+                         pints: 126})
     this.setState({ stateChange: true })
   }
 
