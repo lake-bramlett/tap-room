@@ -13,7 +13,7 @@ export default class KegList extends Component {
         <ul>
         {this.props.kegsList.map((keg, index) => (
           <li>
-            <Keg keg={keg} key={v4()} index={index} />
+            <Keg keg={keg} key={v4()} index={index} onSellPint={this.props.onSellPint} />
           </li>
         ))}
         </ul>

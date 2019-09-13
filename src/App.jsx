@@ -22,13 +22,19 @@ class App extends Component {
   this.setState({ kegsMasterList: temp}, console.log(this.state.kegsMasterList))
 }
 
+handleSellPint = (key) => {
+   let temp = this.state.kegsMasterList.slice()
+   temp[key].pints--;
+   this.setState({ kegsMasterList: temp })
+ }
+
   render() {
     return (
       <Router>
         <div>
           <Header />
           <Switch>
-            <Route exact path="/" render={() => <KegList kegsList={this.state.kegsMasterList}/>} />
+            <Route exact path="/" render={() => <KegList kegsList={this.state.kegsMasterList} onSellPint={this.handleSellPint}/> } />
             <Route exact path="/newkeg" render={() => <NewKeg callback={this.addKegToList}/>} />
           </Switch>
         </div>
