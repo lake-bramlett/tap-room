@@ -1,22 +1,19 @@
-import React from 'react';
-import PropTypes from "prop-types";
+import React, {Component} from 'react'
 
-function Keg(props) {
-  return (
-    <div className="keg">
-      <h2>Name: {props.name}</h2>
-      <h4>Brand: {props.brand}</h4>
-      <h4>ABV: {props.abv}</h4>
-      <h4>Price: {props.price}</h4>
-    </div>
-  );
+export default class Keg extends Component {
+  constructor(props){
+    super(props)
+  }
+
+  render(){
+    const { name, brand, abv, price } = this.props.keg;
+    return (
+        <div className="keg">
+        Name: {name}
+        Brand: {brand}
+        Abv: {abv}
+        Price: {price}
+        </div>
+    )
+  }
 }
-
-Keg.propTypes = {
-  name: PropTypes.string,
-  brand: PropTypes.string,
-  abv: PropTypes.number,
-  price: PropTypes.number,
-};
-
-export default Keg;

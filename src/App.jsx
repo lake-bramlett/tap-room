@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
 import Header from './components/Header';
 import KegList from './components/KegList';
@@ -6,16 +6,36 @@ import NewKeg from './components/NewKeg';
 
 import reactLogo from './assets/React-icon.png';
 
-const App = () => (
-  <Router>
-    <div>
-    <Header />
-    <Switch>
-      <Route exact path="/" component={KegList} />
-      <Route exact path="/newkeg" component={NewKeg} />
-  </Switch>
-  </div>
-  </Router>
-);
+class App extends Component {
+  constructor(props){
+    super(props)
+
+    this.state = {
+      kegsMasterList: []
+    }
+  }
+
+  addKegToList = (keg) => {
+  console.log('second log:' + keg);
+  let temp = this.state.kegsMasterList.slice()
+  temp.push(keg)
+  this.setState({ kegsMasterList: temp}, console.log(this.state.kegsMasterList))
+}
+
+  render() {
+    return (
+      <Router>
+        <div>
+          <Header />
+          <Switch>
+            <Route exact path="/" render={() => <KegList kegsList={this.state.kegsMasterList}/>} />
+            <Route exact path="/newkeg" render={() => <NewKeg callback={this.addKegToList}/>} />
+          </Switch>
+        </div>
+      </Router>
+    )
+  }
+}
+
 
 export default App;
