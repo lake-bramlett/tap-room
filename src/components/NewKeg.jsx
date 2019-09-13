@@ -33,35 +33,36 @@ export default class NewHomeForm extends Component {
     }
 
     return (
-      <div className="newhomes">
-        <div className="bookingbox home-form">
-          <form onSubmit={this.handleNewKegFormSubmission}>
-            <input
-            type='text'
-            id='name'
-            placeholder='name'
-            ref={(input) => {_name= input;}}/>
-            <input
-            type='text'
-            id='brand'
-            placeholder='brand'
-            ref={(input) => {_brand = input;}}/>
-            <input
-            type='number'
-            id='abv'
-            placeholder='abv'
-            ref={(input) => {_abv = input;}}/>
-            <input
-            type='number'
-            id='price'
-            placeholder='price'
-            ref={(input) => {_price= input;}}/>
-            <div className="center">
-            <button className="form-btn" type='submit'>Submit</button>
-            </div>
-          </form>
+        <div className="newkegs">
+          <h3>Tap a new Keg</h3>
+          <div className="keg-form">
+            <form onSubmit={this.handleNewKegFormSubmission}>
+              <input
+              type='text'
+              id='name'
+              placeholder='name'
+              ref={(input) => {_name= input;}}/>
+              <input
+              type='text'
+              id='brand'
+              placeholder='brand'
+              ref={(input) => {_brand = input;}}/>
+              <input
+              type='number'
+              id='abv'
+              placeholder='abv'
+              ref={(input) => {_abv = input;}}/>
+              <input
+              type='number'
+              id='price'
+              placeholder='price'
+              ref={(input) => {_price= input;}}/>
+              <div className="center">
+              <button className="form-btn" type='submit'>Submit</button>
+              </div>
+            </form>
+          </div>
         </div>
-      </div>
     )
   }
 }
