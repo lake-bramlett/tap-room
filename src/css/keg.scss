@@ -21,4 +21,11 @@
   background-color: #8c734b;
   border-radius: 0px 0px 5px 5px;
   cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.keg .button:hover {
+  color: #000000;
 }

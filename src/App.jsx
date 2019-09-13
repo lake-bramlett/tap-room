@@ -25,6 +25,9 @@ class App extends Component {
 handleSellPint = (key) => {
    let temp = this.state.kegsMasterList.slice()
    temp[key].pints--;
+   if (temp[key].pints === 0) {
+     temp.splice(key, key + 1)
+   }
    this.setState({ kegsMasterList: temp })
  }
 
