@@ -8,7 +8,7 @@ let _brand = null;
 let _abv = null;
 let _price = null;
 
-export default class NewHomeForm extends Component {
+export default class NewKeg extends Component {
 
   constructor(props){
     super(props)
