@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Link, Switch, Route } from 'react-router-dom';
 import Header from './components/Header';
 import KegList from './components/KegList';
+import NewKeg from './components/NewKeg'
 
-import reactLogo from './assets/React-icon.png';
-
+import Routes from './Routes';
 
 class App extends Component {
   constructor(props){
@@ -18,13 +18,14 @@ class App extends Component {
   render() {
     return (
       <BrowserRouter>
-      <Switch>
-          <div>
-            <Header />
-            <Route exact path="/" component={KegList} />
-          </div>
-        </Switch>
-        </BrowserRouter>
+        <div>
+          <Header />
+          <Switch>
+            <Route exact path="/" render={() => <KegList kegsList={this.state.kegsMasterList}/>} />
+            <Route exact path="/newkeg" render={() => <NewKeg />} />
+          </Switch>
+        </div>
+      </BrowserRouter>
     )
   }
 }
