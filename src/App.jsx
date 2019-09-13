@@ -11,7 +11,7 @@ class App extends Component {
     super(props)
 
     this.state = {
-      kegsMasterList: []
+      kegsMasterList: [{name: "Tropic Thunder", brand: "Back Pedal", abv: 7.5, price: 6, pints: 45},{name: "Guava Slap", brand: "Back Pedal", abv: 6.5, price: 6, pints: 15}]
     }
   }
 

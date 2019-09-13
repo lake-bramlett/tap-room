@@ -10,20 +10,25 @@
 .name h3 {
   font-weight: 800;
   text-transform: uppercase;
+  margin-bottom: 0px;
 }
 
 .brand h4 {
   font-weight: 200;
   text-transform: lowercase;
+  margin-top: 0px
 }
 
-.keg .button {
+.keg button {
   background-color: #8c734b;
   border-radius: 0px 0px 5px 5px;
-  cursor: pointer;
   text-transform: uppercase;
   font-weight: 800;
   letter-spacing: 2px;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  display: block;
 }
 
 .keg .button:hover {

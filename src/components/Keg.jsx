@@ -26,7 +26,7 @@ export default class Keg extends Component {
           <div className="pints">
             {pints}
           </div>
-        <div className="button" onClick={this.sellPint}>Buy</div>
+        <button className="button" onClick={this.sellPint}>Buy</button>
         </div>
     )
   }
