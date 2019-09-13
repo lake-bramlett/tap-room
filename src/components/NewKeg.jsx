@@ -1,5 +1,6 @@
-import React, {Component} from 'react'
-import {Link,Redirect} from 'react-router-dom'
+import React, {Component} from 'react';
+import {Link,Redirect} from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 let _name = null;
 let _style = null;
