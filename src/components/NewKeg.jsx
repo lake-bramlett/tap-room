@@ -73,3 +73,7 @@ export default class NewHomeForm extends Component {
     )
   }
 }
+
+NewKeg.propTypes = {
+  callback: PropTypes.func
+};

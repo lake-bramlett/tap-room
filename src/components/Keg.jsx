@@ -34,3 +34,7 @@ export default class Keg extends Component {
     )
   }
 }
+
+Keg.propTypes = {
+  keg: PropTypes.object
+};

@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 import Keg from './Keg';
 import { v4 } from 'uuid';
 
@@ -21,3 +22,8 @@ export default class KegList extends Component {
     )
   }
 }
+
+KegList.propTypes = {
+  kegsList: PropTypes.array,
+  onSellPint: PropTypes.func
+};
