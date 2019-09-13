@@ -14,12 +14,19 @@ export default class Keg extends Component {
     const { name, brand, abv, price, pints } = this.props.keg;
     return (
         <div className="keg">
-        Name: {name}
-        Brand: {brand}
-        Abv: {abv}
-        Price: {price}
-        Pints: {pints}
-        <div onClick={this.sellPint}>Buy</div>
+          <div className="name">
+            <h3>{name}</h3>
+          </div>
+          <div className="brand">
+            <h4>{brand}</h4>
+          </div>
+          <div className="sub-info">
+            <span>{abv}%</span><span>${price}</span>
+          </div>
+          <div className="pints">
+            {pints}
+          </div>
+        <div className="button" onClick={this.sellPint}>Buy</div>
         </div>
     )
   }

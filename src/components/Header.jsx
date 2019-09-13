@@ -1,12 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import logo from './../assets/bp_distressed.png'
 
 function Header() {
   return (
     <div className="header">
-      <h1>Tap Room</h1>
-      <Link to="/">Home</Link>
-      <Link to="/newkeg">New Keg</Link>
+      <img src={logo} alt="Back Pedal logo" />
+      <div className="nav">
+        <Link to="/" className="nav-btn">Home</Link>
+        <Link to="/newkeg" className="nav-btn">New Keg</Link>
+      </div>
     </div>
   );
 }
