@@ -14,9 +14,10 @@ class App extends Component {
   }
 
   handleAddKegToList = (keg) => {
+  console.log('keg:' + keg);
   let temp = this.state.kegsMasterList.slice()
   temp.push(keg)
-  this.setState({ kegsMasterList: temp })
+  this.setState({ kegsMasterList: temp }, console.log('app state:' + this.state.kegsMasterList))
 }
 
   render() {
