@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
+import Error404 from './components/Error404';
 import Header from './components/Header';
 import KegList from './components/KegList';
 import NewKeg from './components/NewKeg';
@@ -39,6 +40,7 @@ handleSellPint = (key) => {
           <Switch>
             <Route exact path="/" render={() => <KegList kegsList={this.state.kegsMasterList} onSellPint={this.handleSellPint}/> } />
             <Route exact path="/newkeg" render={() => <NewKeg callback={this.addKegToList}/>} />
+            <Route component={Error404} />
           </Switch>
         </div>
       </Router>
